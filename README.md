@@ -1,4 +1,4 @@
-![picture readme-file](https://github.com/dabo19/mvc-report/blob/main/public/img/php.jpg?raw=true)
+![picture readme-file](https://github.com/dabo19/mvc-report/blob/main/public/img/php.jpg)
 
 MVC Course on BTH
 
