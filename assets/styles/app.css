@@ -1,3 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
 body {
-    background-color: skyblue;
+    background-color: rgb(199, 199, 199);
 }
+
+header {
+    background-color: rgb(199, 199, 199);
+}
+
+main {
+    padding-left: 2em;
+    padding-right: 2em;
+    max-width: 40em;
+    min-height: 20em;
+    margin: auto;
+    border-radius: 35px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+.leftcolumn {
+    max-width: 65%;
+    text-align: center;
+    padding-right: 2em;
+}
+
+
+nav {
+    background-color: rgb(199, 199, 199);
+    text-align: center;
+    margin-bottom: 1em;
+}
+nav ul {
+    display: inline;
+}
+nav li {
+    display: inline;
+}
+nav a {
+    font-size: 1.2em;
+}
+
+main {
+    background-color: #ffffff;
+    border-style: solid;
+    border-color: rgb(255, 144, 18);
+    box-shadow: 5px 5px 10px rgba(0,0,0, 0.5);
+}
+
+footer {
+    background-color: rgb(199, 199, 199);
+    text-align: center;
+}
+
+h1 {
+    border-bottom: 4px rgb(255, 144, 18);
+    border-bottom-style: dashed;
+    font-family: "Inter", sans-serif;
+    color: #333;
+}
+
+h2 {
+    font-size: 1.2em;
+}
+
+.siteheader {
+    text-align: center;
+    border-bottom: none;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-shadow: 3px 3px 3px rgb(255, 144, 18);
+    font-size: 2.5em;
+}
+
+img {
+    max-width: 100%;
+}
+img.aboutpic {
+    border-radius: 50px;
+    border: solid 2px #979797;
+}
+img.startpic {
+    border-radius: 50px;
+    border: solid 2px #979797;
+}
+
+
+p {
+    font-family: "Inter", sans-serif;
+    color: #333;
+}
+
+a {
+    font-family: "Inter", sans-serif;
+    color: #333;
+}
+
+/* unvisited link */
+a:link {
+    color: #333;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: #333;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: rgb(255, 144, 18);
+  }

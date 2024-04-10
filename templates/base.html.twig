@@ -7,11 +7,29 @@
         {% block stylesheets %}
         {% endblock %}
 
-        {% block javascripts %}
-            {% block importmap %}{{ importmap('app') }}{% endblock %}
-        {% endblock %}
+        {% block importmap %}{{ importmap('app') }}{% endblock %}
+
     </head>
     <body>
-        {% block body %}{% endblock %}
+        <header>
+        <h1 class="siteheader">Objektorienterade webbteknologier</h1>
+            <nav>
+                <ul>
+                    <li><a href="{{ path('start_controller') }}">Start</a> | </li>
+                    <li><a href="{{ path('about_controller') }}">About</a> | </li>
+                    <li><a href="{{ path('lucky_controller') }}">Lucky</a> | </li>
+                    <li><a href="{{ path('api_controller') }}">Api</a> | </li>
+                    <li><a href="{{ path('report_controller') }}">Report</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            {% block body %}{% endblock %}
+        </main>
+
+        <footer>
+            <p>Copyright © Daniel Bondesson 2024</p>
+        </footer>
     </body>
 </html>

@@ -1,0 +1,11 @@
+{# templates/api_controller.html.twig #}
+
+{% extends "base.html.twig" %}
+
+{% block title %}Api{% endblock %}
+
+{% block body %}
+    <h1>Api's</h1>
+    <a href="{{ path('quote_controller') }}">Randomly selected quote</a><br>
+    <a href="{{ path('date_controller') }}">Show current date</a>
+{% endblock %}

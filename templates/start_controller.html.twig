@@ -1,0 +1,21 @@
+{# templates/start_controller.html.twig #}
+
+{% extends "base.html.twig" %}
+
+{% block title %}Start{% endblock %}
+
+{% block body %}
+    <h1>Start</h1>
+    <div class="container">
+        <div class="leftcolumn">
+            <p>Mitt namn är Daniel Bondesson och jag är uppväxt i blekinge. 
+            I gymnasiet läste jag teknikprogrammet med inriktning IT på Knuth hahn skolan i Ronneby. 
+            Efter gymnasiet läste jag till sjöingengör, vilket jag också har jobbat som sedan examen 2009.<br><br> 
+            Nu är jag i full gång och studerar kurspaketet Webbprogrammering och databaser vilket jag tycker är jättekul. 
+            Mitt mål och vilja efter detta kurspaketet är att fortsätta läsa programmet Webbprogramering.</p>
+        </div>
+        <div class="rightcolumn">
+            <img class="startpic" src="{{ asset('img/me.jpg') }}" alt="me picture">
+        </div>
+    </div>
+{% endblock %}

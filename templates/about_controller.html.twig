@@ -1,0 +1,24 @@
+{# templates/about_controller.html.twig #}
+
+{% extends "base.html.twig" %}
+
+{% block title %}About{% endblock %}
+
+{% block body %}
+    <h1>About</h1>
+    <div class="container">
+        <div class="leftcolumn">
+            <p>Denna sidan är skapat i samband med mina studier på BTH och i kursen Objektorienterade webbteknologier även kallat mvc. 
+            Kursen fokuserar bland annat på på objektorienterad programmering i PHP, koppling mot databaser, datastrukturer och inbyggda funktioner. 
+            Till vår hjälp använder vi ramverket Symfony.</p>
+
+            <a href="https://github.com/dabo19/mvc-report">Sidans GitHub</a><br>
+            <a href="https://github.com/dbwebb-se/mvc">Kursens GitHub-repo</a>
+        </div>
+
+        <div class="rightcolumn">
+            <img class="aboutpic" src="{{ asset('img/php.png') }}" alt="php picture">
+            <img class="aboutpic" src="{{ asset('img/symfony.jpg') }}" alt="symfony picture">
+        </div>
+    </div>
+{% endblock %}
