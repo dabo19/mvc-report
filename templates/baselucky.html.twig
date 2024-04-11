@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text><text y=%221.3em%22 x=%220.2em%22 font-size=%2276%22 fill=%22%23fff%22>sf</text></svg>">
+        {% block stylesheets %}
+        {% endblock %}
+
+        {% block importmap %}{{ importmap('app') }}{% endblock %}
+
+    </head>
+    <body class="lucky">
+        <header>
+        <h1 class="siteheader">Objektorienterade webbteknologier</h1>
+            <nav>
+                <ul>
+                    <li><a href="{{ path('start_controller') }}">Start</a> | </li>
+                    <li><a href="{{ path('about_controller') }}">About</a> | </li>
+                    <li><a href="{{ path('lucky_controller') }}">Lucky</a> | </li>
+                    <li><a href="{{ path('api_controller') }}">Api</a> | </li>
+                    <li><a href="{{ path('report_controller') }}">Report</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            {% block body %}{% endblock %}
+        </main>
+
+        <footer>
+            <p>Copyright © Daniel Bondesson 2024</p>
+        </footer>
+    </body>
+</html>

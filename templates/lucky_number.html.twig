@@ -1,11 +1,11 @@
 {# templates/lucky_number.html.twig #}
 
-{% extends "base.html.twig" %}
+{% extends "baselucky.html.twig" %}
 
 {% block title %}Lucky{% endblock %}
 
 {% block body %}
     <h1>Lucky</h1>
-    <p>Welcome to my awesome magical homepage.</p>
-    <p>This is the current magic number: {{ number }}</p>
+    <img class="aboutpic" src="{{ asset('img/lasvegas.jpg') }}" alt="las vegas picture">
+    <p class="gamblingnumber">This is your unique gambling number: {{ number }}</p>
 {% endblock %}
