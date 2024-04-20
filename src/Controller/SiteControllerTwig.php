@@ -44,10 +44,3 @@ class SiteControllerTwig extends AbstractController
         return $this->render('start_controller.html.twig');
     }
 }
-
-
-
-
-
-
-

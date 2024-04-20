@@ -12,11 +12,11 @@ class QuoteControllerJson
     public function jsonNumber(): Response
     {
         date_default_timezone_set("Europe/Oslo");
-        
+
         $number = random_int(0, 5);
         $date = date('l jS \of F Y h:i:s A');
 
-        $array = array("All that glitters is not gold. - William Shakespeare", "He travels the fastest who travels alone. - Rudyard Kipling", 
+        $array = array("All that glitters is not gold. - William Shakespeare", "He travels the fastest who travels alone. - Rudyard Kipling",
         "Houston, we have a problem. - Jim Lovell ", "I'll be back. - Terminator ", "May the Force be with you. - Star Wars", "United we stand, divided we fall. - Aesop");
 
         $data = [
