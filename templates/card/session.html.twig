@@ -1,0 +1,18 @@
+{# templates/pig/home.html.twig #}
+
+{% extends "base.html.twig" %}
+
+{% block title %}Show/debug session{% endblock %}
+
+{% block body %}
+<h1>Show/debug session</h1>
+
+<p>Landningsida för att visa session mha: dump(app.session.all)</p>
+
+{# <p>test session: {{ pig_round3 }}</p> #}
+
+ {{ dump(app.session.all) }}
+
+ <a href="{{ path('session_delete') }}">Clear session</a>
+
+{% endblock %}
