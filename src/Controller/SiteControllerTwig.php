@@ -38,6 +38,12 @@ class SiteControllerTwig extends AbstractController
         return $this->render('report_controller.html.twig');
     }
 
+    #[Route("/card", name: "card")]
+    public function card(): Response
+    {
+        return $this->render('card/card.html.twig');
+    }
+
     #[Route("/", name: "start_controller")]
     public function startpage(): Response
     {
